@@ -16,6 +16,7 @@ html {
 
 body {
   height: 300vh;
+  background: #f5f5f5;
 }
 
 header,
@@ -32,6 +33,13 @@ img {
 .container {
   width: 1180px;
   margin: 0 auto;
+}
+
+.big-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .container-fluid-red {
@@ -241,4 +249,90 @@ img {
 .photo-grid img {
   display: block;
   border-radius: 16px;
+}
+
+/* /////////////////////////////PRODUCT SLIDER///////////////////////////////////////// */
+.product-slider {
+  width: 100%;
+  margin: 16px 0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 4px;
+  padding: 9px 33px 11px 33px;
+}
+
+.product-slider__header {
+  min-height: 49px;
+  padding: 10px;
+  display: flex;
+}
+
+.product-slider__header span {
+  /* border-bottom: 1px solid red; */
+  padding: 8px 0;
+  min-height: 49px;
+  font-size: 18px;
+  font-size: 1.286rem;
+  line-height: 31px;
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.product-slider__header span::after {
+  content: '';
+  height: 1px;
+  background-color: red;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  left: -40px;
+}
+
+.product-slider__box {
+  min-height: 280px;
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+  grid-gap: 5px;
+}
+
+.product-slider__item {
+  display: flex;
+  flex: 1;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  /* width: 180px;
+  height: 180px; */
+  transition: all 400ms;
+  padding: auto 2px;
+}
+
+.product-slider__item:hover {
+  transform: translate(0px, -10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-slider__item img {
+  width: 180px;
+  height: 180px;
+}
+
+.product_slider__product-name {
+  margin-bottom: 32px;
+}
+
+.product-slider__product-price {
+  align-self: flex-end;
+  margin-bottom: 14px;
+}
+.wonder-slider__item:hover {
+  /* bottom: 10px; */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  /* transform: scale(1.1); */
+  /* transform: rotate(); */
+  transform: translate(15px, 15px);
 }
