@@ -46,6 +46,7 @@ img {
 .main-header {
   background: white;
   position: sticky;
+  z-index: 1;
   top: 0px;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
   padding: 12px;
