@@ -31,8 +31,9 @@ img {
   height: auto;
 }
 .container {
-  width: 1180px;
+  width: 100%;
   margin: 0 auto;
+  padding: auto 20px;
 }
 
 .big-container {
@@ -165,6 +166,7 @@ img {
   flex-direction: column;
   transition: all 400ms;
   padding: 16px;
+  flex-basis: 0;
   background-color: white;
   border-radius: 8px;
   flex: 1;
@@ -230,8 +232,10 @@ img {
 .last-chance__item {
   border-radius: 16px;
   flex: 1;
+  display: flex;
   grid-gap: 16px;
   margin-left: 20px;
+  /* height: 320px; */
 }
 
 .last-chance__item:last-child {
